@@ -3,144 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>>ZayFBS-produits</title>
+    <title>ZayFBS-produits</title>
     <link rel="stylesheet" href="page-produits.css">
 </head>
- <header>
-   <nav>
-  <div>
-   <strong>ZayFBS</strong>
-    <img src="imagebreif4/logo-navbar.jpg" alt="Logo ZayFBS">
- </div>
-    <ul>
-    <li><a href="#">Acceuil</a></li>
-    <li><a href="#">Produits</a></li>
-    <li><a href="#">Contact</a></li>
-    </ul>
-  <div class="panier">
-    <img src="imagebreif4/logo-panier.png" alt="Panier d'achat">
-    </div>
-    </nav>
-    </header>
+
 <body>
-    <main>
-   <section class="hero"> 
-   <div class="contenu-texte">
-   <img src="imagebreif4/imag-heros1.png" alt="Décoration olive">
+    <header>
+   
+     <nav>
+   <div>
+  <strong>ZayFBS</strong>
+   <img src="imagebreif4/logo-navbar.jpg" alt="Logo ZayFBS">
+     </div>
 
-<div class="products-container">
-<div class="products-header">
-   <img src="olive-splash.png" class="olive-decoration" alt="">
-   <h2>Nos Produits</h2>
-   <button class="add-product">Ajouter un produit ⊕</button>
-</div>
-  <div class="product-card">
-    <img src="huile.png" alt="Huile d'olive premium">
-    <h3>Huile d'olive Premium</h3>
-    <p>
-      Huile d'olive extra vierge de haute qualité,
-      issue des fermes de Fquih Ben Saleh.
-    </p>
-    <div class="price">120 DH</div>
-    <button class="btn modify">Modifier</button>
-    <button class="btn delete">Supprimer</button>
-    <button class="btn cart">Ajouter au panier</button>
-  </div>
-
-  <div class="product-card">
-    <img src="huile.png" alt="Huile bio naturelle">
-    <h3>Huile Bio Naturelle</h3>
-    <p>
-      Produit 100% bio, pressé à froid
-      avec des olives fraîches.
-    </p>
-    <div class="price">140 DH</div>
-    <button class="btn modify">Modifier</button>
-    <button class="btn delete">Supprimer</button>
-    <button class="btn cart">Ajouter au panier</button>
-  </div>
-
-  <div class="product-card">
-    <img src="huile.png" alt="Huile traditionnelle">
-    <h3>Huile Traditionnelle</h3>
-    <p>
-      Huile produite selon les méthodes
-      traditionnelles locales.
-    </p>
-    <div class="price">110 DH</div>
-    <button class="btn modify">Modifier</button>
-    <button class="btn delete">Supprimer</button>
-    <button class="btn cart">Ajouter au panier</button>
-  </div>
-
-  <div class="product-card">
-    <img src="huile.png" alt="Huile extra vierge">
-    <h3>Huile Extra Vierge</h3>
-    <p>
-      Goût riche et authentique,
-      idéale pour cuisine méditerranéenne.
-    </p>
-    <div class="price">160 DH</div>
-    <button class="btn modify">Modifier</button>
-    <button class="btn delete">Supprimer</button>
-    <button class="btn cart">Ajouter au panier</button>
-  </div>
-
-  <div class="product-card">
-    <img src="huile.png" alt="Huile daily use">
-    <h3>Huile Daily Use</h3>
-    <p>
-      Parfaite pour un usage quotidien,
-      saine et légère.
-    </p>
-    <div class="price">90 DH</div>
-    <button class="btn modify">Modifier</button>
-    <button class="btn delete">Supprimer</button>
-    <button class="btn cart">Ajouter au panier</button>
-  </div>
-
-  <div class="product-card">
-    <img src="huile.png" alt="Pack 3 huiles">
-    <h3>Pack 3 Huiles d'Olive</h3>
-    <p>
-      Un pack spécial composé de 3 bouteilles
-      d'huile d'olive extra vierge idéal
-      pour usage familial.
-    </p>
-    <div class="price">250 DH 🔥</div>
-    <button class="btn modify">Modifier</button>
-    <button class="btn delete">Supprimer</button>
-    <button class="btn cart">Ajouter au panier</button>
-  </div>
-</div>
-</body>
-</html>
-    <footer>
-<div class="footer-content">
- <div class="footer-column">
- <h4>📍 Région</h4>
-      <p>Fquih Ben Saleh, Maroc</p>
-        </div>
- <div class="footer-column">
-     <h4>📞 Contact</h4>
-     <p>+212 6 00 00 00 00</p>
-     <p>📧 contact@zayfbs.ma</p>
-</div>
- <div class="footer-column">
-    <h4>🔗 Liens utiles</h4>
-    <ul>
-    <li><a href="#">Accueil</a></li>
+  <ul>
+    <li><a href="#">Acceuil</a></li>
      <li><a href="#">Produits</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    </div>
-    </div>
-    <div class="footer-bottom">
-    <p>&copy; 2026 ZayFBS-Tous droits réservés</p>
-  </div>
+     <li><a href="#">Contact</a></li>
+      </ul>
+ <div class="panier">
+      <img src="imagebreif4/logo-panier.png" alt="Panier d'achat">
+</div>
+   </nav>
+    </header>
+    <main>
+        <section class="hero">
+  <div class="contenu-texte">
+     <img src="imagebreif4/imag-heros1.png" alt="Décoration olive">
+   </div>
+       <section class="products-section">
+  <h1>🫒 Nos Produits</h1>
+  <button class="add-btn">Ajouter un produit +</button>
+  <div id="products-container" class="grid-container"></div>
+   </div>
+     </section>
+    <footer>
+        <div class="footer-content">
+        <div class="footer-column">
+       <h4>📍 Région</h4>
+        <p>Fquih Ben Saleh, Maroc</p>
+            </div>
+  <div class="footer-column">
+    <h4>📞 Contact</h4>
+   <p>+212 6 00 00 00 00</p>
+    <p>📧 contact@zayfbs.ma</p>
+   </div>
+   <div class="footer-column">
+    <h4>🔗 Liens utiles</h4>
+      <ul>
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Produits</a></li>
+     <li><a href="#">Contact</a></li>
+</ul>
+ </div>
+   </div>
+  <div class="footer-bottom">
+   <p>&copy; 2026 ZayFBS - Tous droits réservés</p>
+ </div>
 </footer>
-</body>
-</html>
-  
+</main>
+<script src="produits.js"></script>
 </body>
 </html>
