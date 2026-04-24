@@ -17,9 +17,9 @@
      </div>
 
   <ul>
-    <li><a href="#">Acceuil</a></li>
-     <li><a href="#">Produits</a></li>
-     <li><a href="#">Contact</a></li>
+    <li><a href="page-acceuil.html">Acceuil</a></li>
+    <li><a href="page-produits.html">Produits</a></li>
+    <li><a href="page-contact.html">Contact</a></li>
       </ul>
  <div class="panier">
       <img src="imagebreif4/logo-panier.png" alt="Panier d'achat">
@@ -28,16 +28,22 @@
     </header>
     <main>
         <section class="hero">
-  <div class="contenu-texte">
-     <img src="imagebreif4/imag-heros1.png" alt="Décoration olive">
-   </div>
-       <section class="products-section">
-  <h1>🫒 Nos Produits</h1>
-  <button class="boutton-add">Ajouter un produit +</button>
-  <div id="products-container" class="grid-container"></div>
-   </div>
-     </section>
-</main>
+            <div class="contenu-texte">
+                <img src="imagebreif4/imag-heros1.png" alt="Décoration olive">
+                
+                <h1 class="titre">Nos Produits</h1>
+                <button class="boutton-add">Ajouter un produit +</button>
+            </div>
+        </section>
+
+        <section class="products-section">
+            
+
+                <div id="products-container"></div>
+            </div>
+        </section>
+    </main>
+
 <footer>
         <div class="footer-content">
         <div class="footer-column">
@@ -61,7 +67,65 @@
   <div class="footer-bottom">
    <p>&copy; 2026 ZayFBS - Tous droits réservés</p>
  </div>
+ 
 </footer>
+<div id="popupAdd" class="popup hidden">
+  <div class="popup-content">
+
+    <h3>Ajouter Produit</h3>
+
+    <input type="text" id="addName" placeholder="Nom">
+    <textarea id="addDesc" placeholder="Description"></textarea>
+    <input type="number" id="addPrice" placeholder="Prix">
+    <input type="text" id="addImage" placeholder="Image URL">
+
+    <button id="addBtn">Ajouter</button>
+    <button id="closeAdd">Fermer</button>
+
+  </div>
+</div>
+<div id="popup" class="popup hidden">
+    <div class="popup-content">
+ <h3>Modifier Produit</h3>
+
+<input type="text" id="editName" placeholder="Nom">
+ <textarea id="editDesc" placeholder="Description"></textarea>
+<input type="number" id="editPrice" placeholder="Prix">
+<input type="text" id="editImage" placeholder="Image URL">
+
+  <button id="saveBtn">Sauvegarder</button>
+   <button id="closeBtn">Fermer</button>
+    </div>
+</div>
+
+
+
+
+<div id="panierOverlay" class="panier-overlay"></div>
+
+
+<div id="panierSidebar" class="panier-sidebar">
+
+   
+    <div class="panier-header">
+        <h2 id="panierTitre">Mon panier ( 0 articles )</h2>
+    </div>
+
+   
+    <div id="panierList" class="panier-list">
+        <p class="panier-empty">Votre panier est vide.</p>
+    </div>
+
+    
+    <div class="panier-footer">
+        <div class="panier-total-row">
+            <span class="total-label">TOTAL TTC:</span>
+            <span id="panierTotal" class="total-amount">0DH</span>
+        </div>
+        <button class="btn-checkout">Passer a la caisse</button>
+    </div>
+
+</div>
 <script src="produits.js"></script>
 </body>
 </html>
